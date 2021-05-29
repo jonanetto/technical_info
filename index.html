@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Technical Documentation Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenedor">
+        <!--Inicio del navbar-->
+
+        <nav id="navbar">
+            <header class="titulo">Documentación de HTML</header>
+                <ul>
+                    <li><a class="nav-link" href="#Lenguaje_HTML">Lenguaje HTML</a></li>
+                    <li><a class="nav-link" href="#Orígenes_del_HTML">Orígenes del HTML</a></li>
+                    <li><a class="nav-link" href="#Qué_es_una_etiqueta?">Qué es una etiqueta?</a></li>
+                    <li><a class="nav-link" href="#Elementos_del_HTML">Elementos del HTML</a></li>
+                    <li><a class="nav-link" href="#Ventajas_y_desventajas_del_HTML">Ventajas y desventajas del HTML</a>
+                    </li>
+                    <li><a class="nav-link" href="#Referencia">Referencia</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--fin del navbar-->
+
+        <!--Inicio del main-->
+        <main id="main-doc">
+            <section class="main-section" id="Lenguaje_HTML">
+                <header>Lenguaje HTML</header>
+                <article>
+                    <p>El lenguaje html (hypertext markup language) se utiliza para el desarrollo y creación de páginas
+                        web. Se compone de una serie de etiquetas que el navegador interpreta.
+                    </p>
+                    <p>
+                        Entre las etiquetas que se incluyen dentro del lenguaje HTML se encuentran: hipervínculos,
+                        etiquetas para imágenes, saltos de página, entre otras.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Orígenes_del_HTML">
+                <header>Orígenes del HTML</header>
+                <article>
+                    <p>
+                        Su origen se remonta a 1991, cuando Tim Berners-Lee lo publicó por primera vez en internet en un
+                        documento al que llamó Etiquetas HTML.
+                    </p>
+                    <p>
+                        En ese documento se describen 22 etiquetas que mostraban un diseño inicial y sencillo de este
+                        lenguaje. Aún se conservan algunos de estos elementos y muchos otros se han ido incorporando con
+                        el paso de los años.
+                    </p>
+                    <p>
+                        Son varias las versiones que han existido de HTML desde que se introdujo en Internet. En cada
+                        una de ellas se van ampliando y desarrollando nuevas funcionalidades.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Qué_es_una_etiqueta?">
+                <header>Qué es una etiqueta?</header>
+                <article>
+                    <p>
+                        Las etiquetas HTML son fragmentos de texto rodeados por corchetes angulares cuyo uso es el de
+                        escribir código HTML.
+                    </p>
+                    <p>
+                        <strong>Se diferencian dos tipos de etiquetas:</strong>
+                    </p>
+                    <p>
+                    <ol>
+                        <li>Etiqueta de apertura <code>&lt;etiqueta&gt;</code></li>
+                        <li>Etiqueta de cierre <code>&lt;etiqueta-de-cierre&gt;</code></li>
+                    </ol>
+                    </p>
+                    <p>
+                       <strong>Las principales etiquetas de HTML son:</strong> 
+                    <ul>
+                        <li><code>&lt;html&gt;</code>: Define el inicio del documento HTML, le indica al navegador que
+                            lo
+                            que
+                            viene a continuación debe ser interpretado como código HTML. Esto es así de facto, ya que en
+                            teoría lo que define el tipo de documento es el DOCTYPE, que significa la palabra justo tras
+                            DOCTYPE el tag de raíz.</li>
+                        <li><code>&lt;head&gt;</code>: Define la cabecera del documento HTML; esta cabecera suele
+                            contener información sobre el documento que no se muestra directamente al usuario como, por
+                            ejemplo, el título de la ventana del navegador.</li>
+                        <li><code>&lt;title&gt;</code>: Define el título de la página. Por lo general, el título aparece
+                            en la barra de título encima de la ventana.</li>
+                        <li><code>&lt;link&gt;</code>: Para vincular el sitio a hojas de estilo o iconos.</li>
+                        <li><code>&lt;body&gt;</code>: Define el contenido principal o cuerpo del documento. Esta es la
+                            parte del documento html que se muestra en el navegador; dentro de esta etiqueta pueden
+                            definirse propiedades comunes a toda la página, como color de fondo y márgenes.</li>
+                        <li><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>: encabezados o títulos del documento con
+                            diferente relevancia.</li>
+                        <li><code>&lt;meta&gt;</code>: Para metadatos como la autoría o la licencia, incluso para
+                            indicar parámetros http (mediante http-equiv="") cuando no se pueden modificar por no estar
+                            disponible la configuración o por dificultades con server-side scripting.</li>
+                        <li><code>&lt;div&gt;</code>: División de la página. Se recomienda, junto con css, en vez de
+                            <table> cuando se desea alinear contenido.
+                        </li>
+                        <li><code>&lt;aside&gt;</code>: Para crear una barra lateral.</li>
+                        <li><code>&lt;nav&gt;</code>: Para crear una barra de navegación.</li>
+                        <li><code>&lt;section&gt;</code>: Sirve para crear secciones en una web.</li>
+                        <li><code>&lt;main&gt;</code>: División estructural de la página que engloba el contenido
+                            principal de la misma. Dentro de esta etiqueta, por ejemplo, encontramos los
+                            <code>&lt;articles&gt;</code>.</li>
+                        <li><code>&lt;table&gt;</code>: sirve para la creación de tablas.</li>
+
+                    </ul>
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Elementos_del_HTML">
+                <header>Elementos del HTML</header>
+                <article>
+                    <p></p>
+                    <p>
+                        <strong>Se distinguen varios componentes: elementos y atributos.</strong>
+                    <ul>
+                        <li><mark>Elementos:</mark> Desarrollan la estructura de las páginas webs. Los elementos h1, h2,
+                            h3, h4, h5 y
+                            h6 se utilizan para crear encabezados. Por orden jerárquico h1 representa el primer nivel y,
+                            normalmente, el texto más grande. h2 es el segundo nivel con un texto algo más pequeño, así
+                            hasta llegar al h6 que es el texto más pequeño de todos.</li>
+                        <li><mark>Atributos:</mark> Los atributos de las etiquetas HTML definen detalles de
+                            comportamiento o presentación de la etiqueta donde van colocados. Se escriben dentro de la
+                            propia etiqueta con su nombre de atributo y el valor del atributo entre comillas.</li>
+                    </ul>
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Ventajas_y_desventajas_del_HTML">
+                <header>Ventajas y desventajas del HTML</header>
+                <article>
+                    <p>
+                        Siguen habiendo versiones nuevas cada cierto tiempo con nuevas funcionalidades. Esto, ya que es
+                        un lenguaje muy utilizado por programadores, especialmente, para desarrollar proyectos web. Se
+                        pueden encontrar algunas ventajas y desventajas de su uso.
+
+                    <ol>
+                        <li><mark>Ventajas:</mark> Permite describir hipertexto, tiene un despliegue rápido, lo reconoce
+                            y admite cualquier tipo de explorador y permite archivos pequeños.</li>
+                        <li><mark>Desventajas:</mark> El diseño es más lento, tiene un lenguaje estático y las etiquetas
+                            son limitadas.</li>
+                    </ol>
+                    </p>
+                </article>
+            </section>
+            <section id="Referencia" class="main-section">
+                <header>Referencia</header>
+                <article>
+                    <p>
+                        Toda la documentacion fue tomada de la siguiente <a target="_blank"
+                            href="https://economipedia.com/definiciones/lenguaje-html.html">web</a>.</p>
+                </article>
+            </section>
+        </main>
+        <!--fin del main-->
+
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
